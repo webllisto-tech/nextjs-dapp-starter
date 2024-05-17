@@ -17,23 +17,31 @@
     "@heroicons/react": "^2.0.13",
     "@popperjs/core": "^2.11.6",
     "@tailwindcss/typography": "^0.5.8",
+    "@tanstack/react-query": "^5.36.2",
+    "@tanstack/react-query-devtools": "^5.36.2",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "@web3modal/wagmi": "^4.2.1",
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
+    "encoding": "^0.1.13",
     "eslint": "8.44.0",
     "eslint-config-next": "^14.2.3",
     "next": "^14.2.3",
     "next-themes": "^0.2.1",
+    "pino-pretty": "^11.0.0",
     "postcss": "^8.4.38",
     "react": "^18.3.1",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.3.1",
     "react-toastify": "^9.1.2",
     "sass": "^1.77.2",
     "tailwindcss": "^3.4.3",
     "tw-elements": "^2.0.0",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "viem": "^2.10.9",
+    "wagmi": "^2.9.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
@@ -66,9 +74,5 @@
       "plugin:storybook/recommended",
       "plugin:storybook/recommended"
     ]
-  },
-  "engines": {
-    "node": ">=18.17.1",
-    "yarn": "^1.22.22"
   }
 }

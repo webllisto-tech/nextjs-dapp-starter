@@ -2,23 +2,17 @@
 import 'assets/css/main.css'
 import 'react-toastify/dist/ReactToastify.css'
 
-import { PropsWithChildren } from 'react'
-import { ThemeProvider } from 'next-themes'
 import { ToastContainer } from 'react-toastify'
-import Head from 'next/head'
 
 import Header from 'design-systems/Organisms/Header'
 import Footer from 'design-systems/Organisms/Footer'
 import NoFirstRender from 'design-systems/Atoms/NoFirstRender'
-
-function Providers({ children }: PropsWithChildren) {
-  return <></>
-}
+import { ContextProvider } from 'context'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta charSet="utf-8" />
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
         <meta
@@ -30,9 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta content="yes" name="mobile-web-app-capable" />
         <meta content="website" name="og:type" property="og:type" />
         <meta content="summary_large_image" name="twitter:card" />
-      </Head>
+      </head>
       <body>
-        <ThemeProvider attribute="class">
+        <ContextProvider>
           <NoFirstRender>
             <div className="m-0 min-h-screen overflow-x-hidden p-0 text-center">
               <Header />
@@ -41,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <ToastContainer />
           </NoFirstRender>
-        </ThemeProvider>
+        </ContextProvider>
       </body>
     </html>
   )
